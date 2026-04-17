@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
+date: 2026-04-05
 venue: 'Journal 1'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://academicpages.github.io/files/paper2.pdf'
@@ -90,3 +90,53 @@ KS-тест наиболее чувствителен, когда эмпирич
 Причина в том, что не существует уникального способа упорядочить точки, чтобы корректно вычислить расстояние между эмпирическими функциями распределения. Можно построить некоторую статистику на основе определённого порядка точек и затем вычислить максимальное расстояние между выборками (или между выборкой и кривой). Но критические значения такой статистики уже не будут независимы от распределения.
 
 Здесь может помочь бутстрап, позволяющий численно оценить уровни значимости для конкретной статистики и конкретного многомерного набора данных.
+
+```python
+import numpy as np
+from scipy.stats import ks_2samp, anderson_ksamp
+
+# ----- KS 2-sample test ------
+
+# Generate two samples
+np.random.seed(42)
+sample1 = np.random.normal(loc=0, scale=1, size=50)
+sample2 = np.random.normal(loc=0.3, scale=1, size=50)
+
+# Perform the Kolmogorov–Smirnov 2-sample test
+result = ks_2samp(sample1, sample2)
+
+# Extract test statistic and p-value
+ks_stat, p_value = result.statistic, result.pvalue
+
+# Example results:
+# KS statistic: 0.32
+# p-value: 0.01
+
+# At a significance level of 0.05,
+# we reject the null hypothesis that the samples
+# come from the same distribution,
+# because p-value < 0.05
+
+
+# ------- Anderson K-sample test -------
+
+# Generate three samples
+np.random.seed(42)
+sample1 = np.random.normal(0, 1, 50)
+sample2 = np.random.normal(0.5, 1, 50)
+sample3 = np.random.normal(0, 1, 50)
+
+# Perform the Anderson-Darling k-sample test
+result = anderson_ksamp([sample1, sample2, sample3])
+
+# Extract test statistic and critical values
+statistic, critical_values = result.statistic, result.critical_values
+
+# Example results:
+# Statistic: 6.76
+# Critical values for significance levels 25%, 10%, 5%, 2.5%, 1%, 0.5%, 0.1%:
+# critical_values = [0.45, 1.31, 1.94, 2.58, 3.42, 4.07, 5.56]
+
+# The null hypothesis that all samples come from the same distribution
+# is rejected at the 0.1% significance level
+```
