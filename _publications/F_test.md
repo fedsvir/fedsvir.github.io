@@ -5,10 +5,9 @@ category: manuscripts
 permalink: /publication/F_test
 excerpt: 'Рассматривается применение F-теста (критерия Фишера) в задаче регрессии'
 date: 2026-04-10
-venue: ''
+venue:
 paperurl: 'https://fedsvir.github.io/files/F_test.pdf'
-bibtexurl: ''
-citation: ''
+
 ---
 Рассматривается применение \\(F\\)-теста (критерия Фишера) в задаче регрессии. \\(F\\)-тест также широко используется для проверки равенства дисперсий двух или более выборок.
 

@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/break_point
 excerpt: 'Рассматривается задача поиска точки излома в данных на простом примере - переход от плато к линейной зависимости. Также оценивается дисперсия ошибки точки излома'
 date: 2026-04-15
-venue: 'Journal 1'
+venue:
 paperurl: 'https://fedsvir.github.io/files/break_point.pdf'
 ---
 
