@@ -7,7 +7,6 @@ excerpt: 'Разбиение на байесовские блоки (Bayesian Bl
 date: 2026-04-19
 venue: 'Journal 1'
 paperurl: 'https://fedsvir.github.io/files/paper3.pdf'
-citation: 'Scargle et al. (2013)'
 ---
 
 
@@ -146,3 +145,6 @@ f^{(k)}=\left(N^{(k)}\ln\frac{N^{(k)}}{W^{(k)}}-N^{(k)} \right)\ - \text{ncp\_pr
 \\[
 a>-1/N
 \\]
+
+### Ссылки
+[1] Scargle, J et al. (2013), ApJ, Studies in Astronomical Time Series Analysis. VI. Bayesian Block Representations, 764, 2, 167. doi: [10.1088/0004-637X/764/2/167](https://doi.org/10.1088/0004-637X/764/2/167)
