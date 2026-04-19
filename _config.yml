@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Портфолио"
+title                    : "About Me"
 title_separator          : "-"
 name                     : &name "Свиридов Фёдор" # Update this with your name, this is the default if not overridden by a page
 description              : &description "Fyodor's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -270,8 +270,8 @@ defaults:
       type: publications
     values:
       layout: single
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
       comments: true
   # _portfolio
   - scope:

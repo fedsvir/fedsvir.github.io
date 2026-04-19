@@ -1,64 +1,104 @@
 ---
 layout: archive
-title: "CV"
+title: "Резюме"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<a href="/files/sviridov_cv.pdf" download="sviridov_cv.pdf">Скачать резюме (PDF)</a>
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Обо мне
+Студент магистратуры по астрофизике с сильным бэкграундом в математике и физике. Применяю эти знания в задачах анализа данных и машинного обучения. Имею базовый практический опыт работы с Python, включая обработку данных и построение моделей. Быстро осваиваю новые инструменты и алгоритмы, ответственно подхожу к решению задач и стремлюсь развиваться в выбранной области. Рассматриваю стажировку или junior-позицию в data science, machine learning и смежных направлениях.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+---
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Навыки
+- **Языки программирования:** Python  
+- **Библиотеки:** Pandas, Matplotlib, SciPy, Scikit-learn, CatBoost, PyTorch  
+- **Инструменты:** Jupyter Notebook, Git, Linux (удалённые серверы)  
+- **Языки:** Русский (родной), Английский (B1–B2)
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+---
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Проекты
+
+### Анализ временных рядов  
+[Bayesian_block.git](https://github.com/fedsvir/Bayesian_block.git)  
+Анализ временной структуры астрофизических сигналов с телескопа Fermi. Применение Bayesian Block decomposition и вейвлет-преобразования (Haar) для оценки длительности сигнала и минимального временного масштаба (MVT).  
+**Стек:** Pandas, Matplotlib, SciPy, Fermi GBM Data Tools  
+
+---
+
+### Кластеризация временных рядов  
+[CNN_Wavelet.git](https://github.com/fedsvir/CNN_Wavelet.git)  
+Применение сверточных нейронных сетей для задачи кластеризации временных рядов
+(кривых блеска гамма-всплесков): применение вейвлет-преобразования, извлечение признаков из скалограмм с помощью предварительно обученной CNN и последующее применение PCA и DBSCAN.  
+**Стек:** PyWavelets, Scikit-learn, PyTorch, Matplotlib, h5py  
+
+---
+
+### Задача кредитного скоринга  
+[SHIFT_2026.git](https://github.com/fedsvir/SHIFT_2026.git)  
+Участие в соревнование, где предлагалась решить задачу кредитного скоринга. Использовался градиентный бустинг CatBoost, который позволяет эффективно работать с категориальными признаками и с пропусками в данных.  
+**Стек:** Scikit-learn, CatBoost, Pandas, Matplotlib  
+
+---
+
+## Опыт работы
+
+**Лаборатория экспериментальной астрофизики (команда Konus-Wind)**  
+Физико-технический институт им. А. Ф. Иоффе  
+*Лаборант*  
+Сентябрь 2024 — настоящее время  
+
+**Лаборатория атомной радиоспектроскопии**  
+Физико-технический институт им. А. Ф. Иоффе  
+*Лаборант*  
+Июль 2023 — Август 2024  
+
+---
+
+## Альма-матер
+
+**Академический университет им. Ж.И. Алфёрова**, Санкт-Петербург, Россия  
+
+**Магистратура (2024 — 2026, ожидается)**  
+*Релевантные курсы*: Искусственный интеллект, Статистический анализ астрономических данных, Компьютерное моделирование в астрофизике  
+*Тема диплома*: Спектральные и временные характеристики гамма-всплесков с известным красным смещением, зарегистрированных в эксперименте Fermi/GBM.  
+*Научный руководитель*: к.ф.-м.н. А.Е. Цветкова  
+
+**Бакалавриат (2020 — 2024)**  
+*Релевантные курсы*: Python, Теория вероятностей и математическая статистика, Алгебра, Математический анализ, Дифференциальные уравнения, Математическая физика  
+*Тема диплома*: Влияние процессов оптической сверхтонкой накачки на форму сложного контура линий поглощения в парах рубидия
+*Научный руководитель*: д.ф.-м.н., в.н.с., чл.-корр.РАН А.К. Вершовский  
+
+---
+
+## Конференции
+- Международная конференция PhysicA.SPb (21–25 октября 2024, Санкт-Петербург, Россия)  
+  *Тема:* Физические основы оптического метода неразрушающего контроля газового состава ячеек, используемых в квантовых сенсорах  
+
+---
+
+## Публикации
+
+- Tsvetkova A., Amati L., Bulla M., ..., **Sviridov F.**  
+  *Gamma-ray burst taxonomy: Looking for the third class on the spectral peak energy-duration plane in the rest frame*  
+  Astronomy & Astrophysics 698, A169 (2025)  
+  DOI: [https://doi.org/10.1051/0004-6361/202452673](https://doi.org/10.1051/0004-6361/202452673)
+
+- **Свиридов Ф.С.**, Вершовский А.К.  
+  *Аналитическое решение для населенностей энергетических уровней щелочных металлов в условиях оптической накачки при перемешивании подуровней возбужденного состояния.*  
+  Оптика и спектроскопия, 132 (12), 1254 (2024)  
+  DOI: [10.61011/OS.2024.12.59804.7375-24](http://journals.ioffe.ru/articles/59804?jaccess=6799ff378f21f9.19007655)
+
+- **Свиридов Ф.С.**, Пазгалёв А.С., Вершовский А.К.  
+  *Физические основы оптического метода неразрушающего контроля газового состава ячеек, используемых в квантовых сенсорах. Оптика и спектроскопия*  
+  Оптика и спектроскопия, 132 (12), 1210 (2024)  
+  DOI: [10.61011/OS.2024.12.59793.6625-24](https://journals.ioffe.ru/articles/59793)
+
+---
+
+<sub>Обновлено: Апрель 2026</sub>
