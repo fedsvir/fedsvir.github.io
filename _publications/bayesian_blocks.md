@@ -6,7 +6,7 @@ permalink: /publication/bayesian_blocks
 excerpt: 'Разбиение на байесовские блоки (Bayesian Blocks) - широко используемый простой непараметрический метод временного анализа, который находит оптимальную сегментацию данных на интервале наблюдений.'
 date: 2026-04-19
 venue: 'Journal 1'
-paperurl: 'https://academicpages.github.io/files/bayesian_blocks_ru.pdf'
+paperurl: 'https://fedsvir.github.io/files/bayesian_blocks_ru.pdf'
 ---
 
 
