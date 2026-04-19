@@ -6,7 +6,7 @@ permalink: /publication/F_test
 excerpt: 'Рассматривается применение F-теста (критерия Фишера) в задаче регрессии'
 date: 2026-04-10
 venue: ''
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'
+paperurl: 'https://fedsvir.github.io/files/F_test.pdf'
 bibtexurl: ''
 citation: ''
 ---

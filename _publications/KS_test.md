@@ -6,7 +6,7 @@ permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2026-04-05
 venue: 'Journal 1'
-paperurl: 'https://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://fedsvir.github.io/files/KS_test.pdf'
 citation: ''
 ---
 
